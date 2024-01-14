@@ -32,7 +32,9 @@
 //
 // Log the types of isIsland, population, country and language to the console.
 
-const isIsland = false;
-let language;
+// const isIsland = false;
+// let language;
+//
+// console.log(typeof isIsland, typeof language);
 
-console.log(typeof isIsland, typeof language);
+
