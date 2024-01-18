@@ -37,4 +37,31 @@
 //
 // console.log(typeof isIsland, typeof language);
 
+// Data 1
+let marksWeight = 78;
+let markHeight = 1.69;
+let johnsWeight = 92;
+let johnHeight = 1.95;
+
+let johnBMI = johnsWeight/ (johnHeight ** 2);
+let marksBMI = marksWeight/(markHeight ** 2);
+
+let markHigherBMI = marksBMI > johnBMI;
+
+console.log(`John BMI: ${johnBMI}, Mark BMI: ${marksBMI}, MarKHigherBMI: ${markHigherBMI}`);
+
+
+// Data 2
+marksWeight = 95;
+markHeight = 1.88;
+johnsWeight = 85;
+johnHeight = 1.76;
+
+johnBMI = johnsWeight/ (johnHeight ** 2);
+marksBMI = marksWeight/(markHeight ** 2);
+
+markHigherBMI = marksBMI > johnBMI;
+
+console.log(`John BMI: ${johnBMI}, Mark BMI: ${marksBMI}, MarKHigherBMI: ${markHigherBMI}`);
+
 
