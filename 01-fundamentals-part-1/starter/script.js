@@ -148,14 +148,14 @@
 //
 // HINT 2: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
-let tip, bill, finalValue;
-
-bill = 275;
-
-tip = (bill >= 50 && bill <= 30) ? bill * 0.2 : bill * 0.15;
-
-finalValue = tip + bill;
-
-console.log(`Bill value: ${bill}, Tip: ${tip}, Final value: ${finalValue}`)
+// let tip, bill, finalValue;
+//
+// bill = 275;
+//
+// tip = (bill >= 50 && bill <= 30) ? bill * 0.2 : bill * 0.15;
+//
+// finalValue = tip + bill;
+//
+// console.log(`Bill value: ${bill}, Tip: ${tip}, Final value: ${finalValue}`)
 
 
