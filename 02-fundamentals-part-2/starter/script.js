@@ -60,29 +60,45 @@
 //     BONUS: Create an array totals containing the total values, so the bill + tip.
 //
 //     TEST DATA: 125, 555, and 44.
-const calcTip = (bill) => {
-    if(bill >= 50 && bill <= 300) {
-        return bill * 0.15;
-    }else {
-        return bill * 0.20;
+// const calcTip = (bill) => {
+//     if(bill >= 50 && bill <= 300) {
+//         return bill * 0.15;
+//     }else {
+//         return bill * 0.20;
+//     }
+// };
+//
+// const calcTotal = (bill, func) => {
+//     return bill + func(bill);
+// };
+//
+// const bills = [125, 555, 44];
+// const tips = [];
+// const total = [];
+//
+// tips[0] = calcTip(bills[0]);
+// tips[1] = calcTip(bills[1]);
+// tips[2] = calcTip(bills[2]);
+//
+// total[0] = calcTotal(bills[0], calcTip);
+// total[1] = calcTotal(bills[1], calcTip);
+// total[2] = calcTotal(bills[2], calcTip);
+//
+// console.log(tips);
+// console.log(total);
+
+const jonas = {
+    firstName: 'jonas',
+    lastName: 'jobs',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ["Micheal", "Peter", "Steven"],
+    calAge: function () {
+        this.age = new Date().getFullYear() - this.birthYear;
+        return this.age;
     }
 };
 
-const calcTotal = (bill, func) => {
-    return bill + func(bill);
-};
-
-const bills = [125, 555, 44];
-const tips = [];
-const total = [];
-
-tips[0] = calcTip(bills[0]);
-tips[1] = calcTip(bills[1]);
-tips[2] = calcTip(bills[2]);
-
-total[0] = calcTotal(bills[0], calcTip);
-total[1] = calcTotal(bills[1], calcTip);
-total[2] = calcTotal(bills[2], calcTip);
-
-console.log(tips);
-console.log(total);
+// console.log(`Jonas has 3 friends, and his best friend is called ${jonas.friends[0]}`);
+jonas.calAge();
+console.log(jonas.age);
