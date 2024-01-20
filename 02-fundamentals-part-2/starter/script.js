@@ -105,33 +105,69 @@
 
 /* Write your code below. Good luck! 🙂 */
 
-const john = {
-    fullName: "John Smith",
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height * this.height);
+// const john = {
+//     fullName: "John Smith",
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         this.bmi = this.mass / (this.height * this.height);
+//
+//         return this.bmi;
+//     }
+// };
+//
+// const mark = {
+//     fullName: "Mark Miller",
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function() {
+//         this.bmi = this.mass / (this.height * this.height);
+//
+//         return this.bmi;
+//     }
+// };
+//
+// john.calcBMI();
+// mark.calcBMI();
+//
+// if(john.bmi > mark.bmi){
+//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
+// }else {
+//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`);
+// }
 
-        return this.bmi;
+// const calcTips = function(bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+//
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const totals = [];
+// const tips = [];
+//
+// for(let i = 0; i < bills.length; i++) {
+//     tips[i] = calcTips(bills[i]);
+//     totals[i] = tips[i] + bills[i];
+// }
+//
+// console.log(totals);
+// console.log(tips);
+
+const printForecast = function (arr) {
+    let counter = 1;
+    let result = '';
+
+    for(let i =0; i < arr.length; i++, ++counter) {
+        result += `...${arr[i]}OC in ${counter} days`;
+
+        if(i === arr.length - 1) {
+            result += '...';
+        }
     }
-};
 
-const mark = {
-    fullName: "Mark Miller",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function() {
-        this.bmi = this.mass / (this.height * this.height);
-
-        return this.bmi;
-    }
-};
-
-john.calcBMI();
-mark.calcBMI();
-
-if(john.bmi > mark.bmi){
-    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
-}else {
-    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`);
+    console.log(result);
 }
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+printForecast(data1);
+printForecast(data2);
